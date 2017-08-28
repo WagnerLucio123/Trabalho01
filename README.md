@@ -1,13 +1,14 @@
 # TRABALHO 01
-Trabalho desenvolvido durante a disciplina de BD
+<b>Eventos App</b><br>
 
 # Sumário
 
 ### 1.COMPONENTES<br>
-Integrantes do grupo<br>
+Wagner Lucio <br> waguinholucio1234@gmail.com<br>
+Arthur Locateli<br> arthurjurassicpark@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
-Este documento contém a especificação do projeto do banco de dados <nome do projeto> e motivação da escolha realizada. <br>
+Este documento contém a especificação do projeto do banco de dados <b>Eventos App</b> e motivação da escolha realizada. <br>
 
 ### 3.MINI-MUNDO<br>
 Descrever o mini-mundo. Não deve ser maior do que 30 linhas <br>
