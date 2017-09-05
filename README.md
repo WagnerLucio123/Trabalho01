@@ -8,10 +8,10 @@ Wagner Lucio <br> waguinholucio1234@gmail.com<br>
 Arthur Locateli<br> arthurjurassicpark@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
-Este documento contém a especificação do projeto do banco de dados <b>Eventos App</b> e motivação da escolha realizada. <br>
+Tem-se a motivação de aprender e entender o funcionamento do sistema de banco de dados através desse trabalho <br>
 
 ### 3.MINI-MUNDO<br>
-Descrever o mini-mundo. Não deve ser maior do que 30 linhas <br>
+Aplicativo para anunciar eventos Esse aplicativo tem o objetivo de anunciar o local, horário e o dia do evento (caso tenha que pagar a entrada, o preço deve ser colocado ), todos esse dados serão fornecidos por quem deseja promover o evento(show). Os usuários podem ser as pessoas que promovem o evento, as pessoas que desejam ir a um evento especifico ou que queiram saber se haverá um evento perto de sua residência, no caso de usuário que queiram ir a um evento devem fornecer seu nome de usuário, senha, endereço, data de nascimento(caso se houverem eventos proibidos para menores de idade, tal evento não será a ele fornecido ) e e-mail. Os usuários podem fazer busca de um tipo de evento (games, esportes, shows e etc.), buscar um evento em especifico, comentar sobre o evento dando feedbacks além de poder saber a distancia e o caminho de sua residência até o local do evento caso queira saber como chegar ao local. <br>
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
