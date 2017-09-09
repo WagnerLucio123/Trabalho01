@@ -21,14 +21,13 @@ Algumas telas do prototipo <br>
 
 
 ### 5.MODELO CONCEITUAL<br>
-<a href="https://ibb.co/c6zpeF"><img src="https://preview.ibb.co/jYWfmv/Capturar_Conceitual.jpg" alt="Capturar_Conceitual" border="0"></a><br>
+<a href="https://ibb.co/bYHsGv"><img src="https://preview.ibb.co/kRgKwv/Capturar_Conceitual.jpg" alt="Capturar_Conceitual" border="0"></a><br>
 <b>Link do arquivo:</b>https://drive.google.com/file/d/0B1cywo6W_LptTlFBNmFYc0p0N3c/view?usp=sharing<br>
     
     b) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
 
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
-    [Grupo02]: [Nomes dos que participaram na avaliação]
+    EventosApp: Wagner Lucio da Silva Pacheco
 
 #### 5.2 DECISÕES DE PROJETO
     [atributo]: [descrição da decisão]
@@ -40,19 +39,22 @@ Algumas telas do prototipo <br>
 
 #### 5.3 DESCRIÇÃO DOS DADOS 
     [objeto]: [descrição do objeto]
+    USUARIO: Armazena informações relevantes ao usuario
+    EVENTOS: Armazena informações sobre o evento (sua localização, data e horario de tal evento e etc.)
+    ENDEREÇO: Armazena informações sobre o endereço do usuario e do envento 
+    ESTADO: Armazena informações sobre o estado em que se localiza.
+    MUNICIPIO: Armazena informações sobre o municipio  em que se localiza.
+    BAIRRO: Armazena informações sobre o bairro em que se localiza.
+    RUA: Armazena informações sobre, em qual rua se localiza.
+    AVENIDA: Armazena informações sobre, em qual avenida se localiza.
     
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
-
-
 ### 6	MODELO LÓGICO<br>
+<a href="https://ibb.co/bXCW9F"><img src="https://preview.ibb.co/bHnbbv/Capturar_Logico.jpg" alt="Capturar_Logico" border="0"></a><br>
+<b>Link do arquivo:</b>https://drive.google.com/file/d/0B1cywo6W_LptVmlqVk41ckRBb1U/view?usp=sharing<br>
 
 ### 7	MODELO FÍSICO<br>
+<b>Link do arquivo:</b>https://drive.google.com/file/d/0B1cywo6W_LpteGdMZFZQd2ZrQVU/view?usp=sharing<br>
 
-        Entrega até este ponto em (data a ser definida)
-        
- 
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
         Detalhamento sobre as informações e processo de obtenção ou geração dos dados.
