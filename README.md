@@ -14,15 +14,16 @@ Tem-se a motivação de aprender e entender o funcionamento do sistema de banco 
 Aplicativo para anunciar eventos Esse aplicativo tem o objetivo de anunciar o local, horário e o dia do evento (caso tenha que pagar a entrada, o preço deve ser colocado ), todos esse dados serão fornecidos por quem deseja promover o evento(show). Os usuários podem ser as pessoas que promovem o evento, as pessoas que desejam ir a um evento especifico ou que queiram saber se haverá um evento perto de sua residência, no caso de usuário que queiram ir a um evento devem fornecer seu nome de usuário, senha, endereço, data de nascimento(caso se houverem eventos proibidos para menores de idade, tal evento não será a ele fornecido ) e e-mail. Os usuários podem fazer busca de um tipo de evento (games, esportes, shows e etc.), buscar um evento em especifico, comentar sobre o evento dando feedbacks além de poder saber a distancia e o caminho de sua residência até o local do evento caso queira saber como chegar ao local. <br>
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
-Algumas telas do prototipo <br>
-
-
+Algumas telas do prototipo: <br>
+<a href="https://imgbb.com/"><img src="https://image.ibb.co/jKDtOa/Capturar2.jpg" alt="Capturar2" border="0"></a>
+<a href="https://ibb.co/ijrBbv"><img src="https://image.ibb.co/e8oDpF/Capturar3.jpg" alt="Capturar3" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://image.ibb.co/joWoOa/Capturar4.jpg" alt="Capturar4" border="0"></a><br>
 <b>Link do pdf:</b>https://drive.google.com/file/d/0B1cywo6W_LptYTVOZzI3clBjZ3M/view?usp=sharing<br>
 
 
 ### 5.MODELO CONCEITUAL<br>
 <a href="https://ibb.co/bYHsGv"><img src="https://preview.ibb.co/kRgKwv/Capturar_Conceitual.jpg" alt="Capturar_Conceitual" border="0"></a><br>
-<b>Link do arquivo:</b>https://drive.google.com/file/d/0B1cywo6W_LptTlFBNmFYc0p0N3c/view?usp=sharing<br>
+<b>Link do arquivo:</b>https://drive.google.com/file/d/0B1cywo6W_LptQWpYYkFFUDhsNDg/view?usp=sharing<br>
     
     b) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
 
