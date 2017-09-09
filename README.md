@@ -21,8 +21,6 @@ Algumas telas do prototipo <br>
 
 
 ### 5.MODELO CONCEITUAL<br>
-<img src="https://uploaddeimagens.com.br/imagens/capturarconceitual-jpg" ><br>
-
 
 <b>Link do arquivo:</b>https://drive.google.com/file/d/0B1cywo6W_LptTlFBNmFYc0p0N3c/view?usp=sharing<br>
     
