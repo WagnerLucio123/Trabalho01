@@ -50,7 +50,7 @@ Algumas telas do prototipo: <br>
     
 ### 6	MODELO LÓGICO<br>
 <a href="https://ibb.co/bXCW9F"><img src="https://preview.ibb.co/bHnbbv/Capturar_Logico.jpg" alt="Capturar_Logico" border="0"></a><br>
-<b>Link do arquivo:</b>https://drive.google.com/file/d/0B1cywo6W_LptVmlqVk41ckRBb1U/view?usp=sharing<br>
+<b>Link do arquivo:</b>https://drive.google.com/file/d/0B1cywo6W_LptclB4WHcxeWVGazA/view?usp=sharing<br>
 
 ### 7	MODELO FÍSICO<br>
 <b>Link do arquivo:</b>https://drive.google.com/file/d/0B1cywo6W_LpteGdMZFZQd2ZrQVU/view?usp=sharing<br>
