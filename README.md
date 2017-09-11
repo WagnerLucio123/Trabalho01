@@ -38,8 +38,7 @@ Algumas telas do prototipo: <br>
     pode possuir para cada departamento mais de uma localização... 
     b) justifique!
 
-#### 5.3 DESCRIÇÃO DOS DADOS 
-    [objeto]: [descrição do objeto]
+#### 5.3 DESCRIÇÃO DOS DADOS
     USUARIO: Armazena informações relevantes ao usuario
     EVENTOS: Armazena informações sobre o evento (sua localização, data e horario de tal evento e etc.)
     ENDEREÇO: Armazena informações sobre o endereço do usuario e do envento 
