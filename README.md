@@ -25,7 +25,31 @@ Algumas telas do prototipo: <br>
 <a href="https://ibb.co/bYHsGv"><img src="https://preview.ibb.co/kRgKwv/Capturar_Conceitual.jpg" alt="Capturar_Conceitual" border="0"></a><br>
 <b>Link do arquivo:</b>https://drive.google.com/file/d/0B1cywo6W_LptQWpYYkFFUDhsNDg/view?usp=sharing<br>
     
-    b) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
+    Caso 1 - Tela de login
+    RF001: Cadastra-se
+    RF002: Promover o login no app
+    RF003: Modificar senha
+    Ator: USUARIO
+    
+    Caso 2 - Tela de menu
+    RF004: Procura eventos
+    RF005: Cria eventos
+    RF006: Ver perfil
+    RF007: Modificar Perfil
+    RNF001: Mostra o nome de USUARIO
+    RNF002: Mostra a foto do USUARIO
+    Ator: USUARIO
+    
+    Caso 3 - Tela de Busca
+    RF008: Busca por nome
+    RF009: Filtrar busca
+    Ator: USUARIO
+    
+    Caso 4 - Tela de Perfil
+    RNF003: Mostra a idade
+    RNF004: Mostra o nome de perfil
+    RNF005: Mostrar a foto de perfil
+    Ator: USUARIO
 
 #### 5.1 Validação do Modelo Conceitual
     EventosApp: Wagner Lucio da Silva Pacheco
