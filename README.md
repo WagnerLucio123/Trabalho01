@@ -52,7 +52,7 @@ Algumas telas do prototipo: <br>
     Ator: USUARIO
 
 #### 5.1 Validação do Modelo Conceitual
-    EventosApp: Wagner Lucio da Silva Pacheco
+    PrecoBaixo:Ramom Matieli e Jean Carlos
 
 #### 5.2 DECISÕES DE PROJETO
     [atributo]: [descrição da decisão]
