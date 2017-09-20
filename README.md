@@ -57,11 +57,10 @@ Algumas telas do prototipo: <br>
 #### 5.2 DECISÕES DE PROJETO
     [atributo]: [descrição da decisão]
     
-    EXEMPLO:
-    a) Campo endereço: em nosso projeto optamos por um campo multivalorado e composto, pois a empresa 
-    pode possuir para cada departamento mais de uma localização... 
-    b) justifique!
-
+    Usuario
+    numero_de_telefone: Decidimos que no compo do atributo telefone teria que ser multivalorado, pois o usuario poderia possuir mais de     um telefone.
+    Endereço: Decidimos que ele não deveria conter varios atributos, mas sim telos divididos em entidades evitando a repetição de dados.
+    
 #### 5.3 DESCRIÇÃO DOS DADOS
     USUARIO: Armazena informações relevantes ao usuario
     EVENTOS: Armazena informações sobre o evento (sua localização, data e horario de tal evento e etc.)
@@ -81,11 +80,8 @@ Algumas telas do prototipo: <br>
 
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
-        Detalhamento sobre as informações e processo de obtenção ou geração dos dados.
-        Referenciar todas as fontes referentes a :
-        a) obtenção dos dados
-        b) obtenção de códigos reutilizados
-        c) fontes de estudo para desenvolvimento do projeto
+        Os dados foram recolhidos em pesquisas na internet de acordo com o que pediam e alguns dados não são reais.
+        https://github.com/EventosAppGroup/Trabalho01/blob/master/DadosInseridos
         
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
         a) inclusão das instruções para criação das tabelas e estruturas de amazenamento do BD
