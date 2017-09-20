@@ -79,9 +79,10 @@ Algumas telas do prototipo: <br>
 <b>Link do arquivo:</b>https://drive.google.com/file/d/0B1cywo6W_LpteGdMZFZQd2ZrQVU/view?usp=sharing<br>
 
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-#### 8.1 DETALHAMENTO DAS INFORMAÇÕES
+#### 8.1 DETALHAMENTO DAS INFORMAÇÕES: https://github.com/EventosAppGroup/Trabalho01/blob/master/DadosInseridos
         Os dados foram recolhidos em pesquisas na internet de acordo com o que pediam e alguns dados não são reais.
-        https://github.com/EventosAppGroup/Trabalho01/blob/master/DadosInseridos
+        
+        
         
 #### 8.2 INCLUSÃO DO SCRIPT PARA CRIAÇÃO DE TABELA E INSERÇÃO DOS DADOS
         a) inclusão das instruções para criação das tabelas e estruturas de amazenamento do BD
