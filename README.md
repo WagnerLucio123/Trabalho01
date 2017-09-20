@@ -55,8 +55,7 @@ Algumas telas do prototipo: <br>
     Preco Baixo: Ramom Matieli e Jean Carlos<br>
 
 #### 5.2 DECISÕES DE PROJETO
-    [atributo]: [descrição da decisão]
-    
+
     Usuario
     numero_de_telefone: Decidimos que no compo do atributo telefone teria que ser multivalorado, pois o usuario poderia possuir mais de     um telefone.
     Endereço: Decidimos que ele não deveria conter varios atributos, mas sim telos divididos em entidades evitando a repetição de dados.
