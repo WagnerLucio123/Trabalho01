@@ -52,7 +52,7 @@ Algumas telas do prototipo: <br>
     Ator: USUARIO
 
 #### 5.1 Validação do Modelo Conceitual
-    Preco Baixo: <b>Ramom Matieli e Jean Carlos</b><br>
+<b>Preco Baixo</b>: Ramom Matieli e Jean Carlos<br>
 
 #### 5.2 DECISÕES DE PROJETO
 
