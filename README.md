@@ -11,7 +11,7 @@ Arthur Locateli<br> arthurjurassicpark@gmail.com<br>
 Tem-se a motivação de aprender e entender o funcionamento do sistema de banco de dados através desse trabalho , que é um projeto com o intuito de buscar e criar eventos. <br>
 
 ### 3.MINI-MUNDO<br>
-Aplicativo para anunciar eventos Esse aplicativo tem o objetivo de anunciar o local, horário e o dia do evento (caso tenha que pagar a entrada, o preço deve ser colocado ), todos esse dados serão fornecidos por quem deseja promover o evento(show). Os usuários podem ser as pessoas que promovem o evento, as pessoas que desejam ir a um evento especifico ou que queiram saber se haverá um evento perto de sua residência, no caso de usuário que queiram ir a um evento devem fornecer seu nome de usuário, senha, endereço, data de nascimento(caso se houverem eventos proibidos para menores de idade, tal evento não será a ele fornecido ) e e-mail. Os usuários podem fazer busca de um tipo de evento (games, esportes, shows e etc.), buscar um evento em especifico, comentar sobre o evento dando feedbacks além de poder saber a distancia e o caminho de sua residência até o local do evento caso queira saber como chegar ao local<br>
+Aplicativo para anunciar eventos Esse aplicativo tem o objetivo de anunciar o local, horário e o dia do evento (caso tenha que pagar a entrada, o preço deve ser colocado ), todos esse dados serão fornecidos por quem deseja promover o evento(show). Os usuários podem ser as pessoas que promovem o evento, as pessoas que desejam ir a um evento especifico ou que queiram saber se haverá um evento perto de sua residência, no caso de usuário que queiram ir a um evento devem fornecer seu nome de usuário, senha, endereço, data de nascimento(caso se houverem eventos proibidos para menores de idade, tal evento não será a ele fornecido ) e e-mail. Os usuários podem fazer busca de um tipo de evento (games, esportes, shows e etc.), buscar um evento em especifico, comentar sobre o evento dando feedbacks além de poder saber a distancia e o caminho de sua residência até o local do evento caso queira saber como chegar ao local.<br>
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 Algumas telas do prototipo: <br>
@@ -52,7 +52,7 @@ Algumas telas do prototipo: <br>
     Ator: USUARIO
 
 #### 5.1 Validação do Modelo Conceitual
-    Preco Baixo: Ramom Matieli e Jean Carlos<br>
+    Preco Baixo: <b>Ramom Matieli e Jean Carlos</b><br>
 
 #### 5.2 DECISÕES DE PROJETO
 
