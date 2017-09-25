@@ -1,17 +1,17 @@
 CREATE TABLE USUARIO (
     id_Usuario Int PRIMARY KEY,
-    nome vachar(50),
-    senha vachar(70),
+    nome varchar(50),
+    senha varchar(70),
     data_de_nascimento date,
-    e_mail vachar(70),
+    e_mail varchar(70),
     FK_numero_de_telefone_numero_de_telefone_PK Int,
     FK_ENDERECO_id_endereco Int
 );
 
 CREATE TABLE EVENTO (
     id_evento Int PRIMARY KEY,
-    nome vachar(50),
-    tipo vachar(50),
+    nome varchar(50),
+    tipo varchar(50),
     preco float,
     data_do_evento date,
     horario time,
@@ -26,30 +26,30 @@ CREATE TABLE ENDERECO (
 
 CREATE TABLE ESTADO (
     id_estado Int PRIMARY KEY,
-    nome_estado vachar(50),
+    nome_estado varchar(50),
     FK_MUNICIPIO_id_municipio Int
 );
 
 CREATE TABLE MUNICIPIO (
     id_municipio Int PRIMARY KEY,
-    nome_municipio vachar(50)
+    nome_municipio varchar(50)
 );
 
 CREATE TABLE BAIRRO (
     id_bairro Int PRIMARY KEY,
-    nome_bairro vachar(50),
+    nome_bairro varchar(50),
     FK_MUNICIPIO_id_municipio Int
 );
 
 CREATE TABLE RUA (
     id_rua Int PRIMARY KEY,
-    nome_rua vachar(50),
+    nome_rua varchar(50),
     FK_BAIRRO_id_bairro Int
 );
 
 CREATE TABLE AVENIDA (
     id_avenida Int PRIMARY KEY,
-    nome_avenida vachar(50),
+    nome_avenida varchar(50),
     FK_BAIRRO_id_bairro Int
 );
 
@@ -116,12 +116,11 @@ ALTER TABLE Endereco_Estado ADD CONSTRAINT FK_Endereco_Estado_1
     FOREIGN KEY (FK_ESTADO_id_estado)
     REFERENCES ESTADO (id_estado);
     
-insert into usuario (nome,senha,data_de_nascimento,e_mail) values('João',null,'1999/11/24','João@gmail.com'),('Maria',null,'2000/09/03','Maria12@gmail.com'),('Beijamim',null,'2001/07/05','Beijamim@gmail.com'),('Ana',null,'2001/03/04','anaelizabethsantos1@gmail.com'),('Kevim',null,'2000/11/13','kevim@gmail.com'),('Diana',null,'2002/02/12','Diana1234@gmail.com'),('Meredith',null,'2002/02/02','Meredithgreys@gmail.com'),('Matheus',null,'1988/08/08','Matheuslevi2@gmail.com'),('Jonas',null,'1999/04/09','Jonas@gmail.com'),('Pedro',null,'2003/07/03','Pedro@gmail.com');  
-insert into evento(nome,tipo,preco,data_do_evento,horario,taxa_de_criacao) values('DomQuixote','Teatro',5.00,'2018/10/26',19,20.00),('A_minha_mãe_é_uma_peça','Teatro',null,'2018/08/23',17,20.00),(NULL,NULL,NULL,NULL,NULL,NULL),('RockInRio','Musica',10.00,'2018/03/22',16,20.00),('Comicom','Games',12.00,'2019/06/24',14,20.00),('CantadasEnfadonhas','Comedia',5.00,'2019/03/25',15,20.00),('DueloDePiadas','Comedia',4,'2020/01/22',17,20.00),('DueloDeComida','Comida',10,'2019/05/20',15,20.00),('Food Trunk','Comida',null,'2020/04/21',19,20.00),(NULL,NULL,NULL,NULL,NULL,NULL);
-insert into estado(nome_estado) values('ES');
-insert into municipio(nome_municipio) values('Serra'),('Vitoria');
-insert into bairro(nome_bairro) values('SãoFrancisco'),('DasLaranjeiras'),('Manguinhos'),('Goiabeiras');
-insert into rua(nome_rua) values('SantaCecilia'),('ManoelJoséLíriodeSales'),('SãoLucas'),('SãoPedro'),(null);
-insert into avenida(nome_avenida) values('Petrópolis'),('FernandoFerrari'),('NorteSul'),(null);
-insert into numero_de_telefone(numero_de_telefone) values(997603834),(998453438),(995479032),(997245002),(965873015),(981535140),(985467312),(970645123),(967004352),(972536214);
-
+insert into usuario (id_usuario,nome,senha,data_de_nascimento,e_mail) values(1,'João',null,'1999/11/24','João@gmail.com'),(2,'Maria',null,'2000/09/03','Maria12@gmail.com'),(3,'Beijamim',null,'2001/07/05','Beijamim@gmail.com'),(4,'Ana',null,'2001/03/04','anaelizabethsantos1@gmail.com'),(5,'Kevim',null,'2000/11/13','kevim@gmail.com'),(6,'Diana',null,'2002/02/12','Diana1234@gmail.com'),(7,'Meredith',null,'2002/02/02','Meredithgreys@gmail.com'),(8,'Matheus',null,'1988/08/08','Matheuslevi2@gmail.com'),(9,'Jonas',null,'1999/04/09','Jonas@gmail.com'),(10,'Pedro',null,'2003/07/03','Pedro@gmail.com');  
+insert into evento(id_evento,nome,tipo,preco,data_do_evento,horario,taxa_de_criacao) values(1,'DomQuixote','Teatro',5.00,'2018/10/26',19,20.00),(2,'A_minha_mãe_é_uma_peça','Teatro',null,'2018/08/23',17,20.00),(3,NULL,NULL,NULL,NULL,NULL,NULL),(4,'RockInRio','Musica',10.00,'2018/03/22',16,20.00),(5,'Comicom','Games',12.00,'2019/06/24',14,20.00),(6,'CantadasEnfadonhas','Comedia',5.00,'2019/03/25',15,20.00),(7,'DueloDePiadas','Comedia',4,'2020/01/22',17,20.00),(8,'DueloDeComida','Comida',10,'2019/05/20',15,20.00),(9,'Food Trunk','Comida',null,'2020/04/21',19,20.00);
+insert into estado(id_estado,nome_estado) values(1,'ES');
+insert into municipio(id_municipio,nome_municipio) values(1,'Serra'),(2,'Vitoria');
+insert into bairro(id_bairro,nome_bairro) values(1,'SãoFrancisco'),(2,'DasLaranjeiras'),(3,'Manguinhos'),(4,'Goiabeiras');
+insert into rua(id_rua,nome_rua) values(1,'SantaCecilia'),(2,'ManoelJoséLíriodeSales'),(3,'SãoLucas'),(4,'SãoPedro'),(5,null);
+insert into avenida(id_avenida,nome_avenida) values(1,'Petrópolis'),(2,'FernandoFerrari'),(3,'NorteSul'),(4,null);
+insert into numero_de_telefone(numero_de_telefone_PK,numero_de_telefone) values(1,997603834),(2,998453438),(3,995479032),(4,997245002),(5,965873015),(6,981535140),(7,985467312),(8,970645123),(9,967004352),(10,972536214);
