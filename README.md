@@ -5,7 +5,6 @@
 
 ### 1.COMPONENTES<br>
 Wagner Lucio <br> waguinholucio1234@gmail.com<br>
-Arthur Locateli<br> arthurjurassicpark@gmail.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
 Tem-se a motivação de aprender e entender o funcionamento do sistema de banco de dados através desse trabalho , que é um projeto com o intuito de buscar e criar eventos. <br>
