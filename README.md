@@ -21,7 +21,7 @@ Algumas telas do prototipo: <br>
 
 
 ### 5.MODELO CONCEITUAL<br>
-<a href="https://ibb.co/bYHsGv"><img src="https://preview.ibb.co/kRgKwv/Capturar_Conceitual.jpg" alt="Capturar_Conceitual" border="0"></a><br>
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/Conceitual1.brM3"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/Conceitual1.brM3" alt="Conceitual1" border="0"></a><br>
 <b>Link do arquivo:</b>https://github.com/WagnerLucio123/Trabalho01/blob/master/Conceitual1.brM3<br>
     
     Caso 1 - Tela de login
