@@ -1,4 +1,6 @@
 
+create database trabalho;
+use trabalho;
 CREATE TABLE USUARIO (
     id_Usuario Int PRIMARY KEY,
     nome varchar(50),
