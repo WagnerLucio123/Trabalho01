@@ -1,4 +1,6 @@
 
+create database trabalho;
+use trabalho;
 CREATE TABLE USUARIO (
     id_Usuario Int PRIMARY KEY,
     nome varchar(50),
@@ -164,3 +166,7 @@ select numero_de_telefone from numero_de_telefone where numero_de_telefone_PK = 
 
 select numero_de_telefone from numero_de_telefone where numero_de_telefone_PK = ((((3%2)+1)*2*5/4)-2);
 select numero_de_telefone from numero_de_telefone where numero_de_telefone_PK = (((4%2)+10)/((2*2*2)+2))+(3%2);
+
+select nome from logradora where tipo = 'rua' and nome like '%s%';
+select nome from logradora where tipo = 'rua' and nome like '%s';
+select nome from logradora where tipo = 'rua' and nome like 'm%';
