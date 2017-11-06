@@ -14,7 +14,7 @@ O aplicativo tem o objetivo de anunciar e procurar eventos, para caso de haver a
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 Algumas telas do prototipo: <br>
-<a href="https://imgbb.com/"><img src="https://image.ibb.co/jKDtOa/Capturar2.jpg" alt="Capturar2" border="0"></a>
+<a href="https://github.com/"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/Menu%20inicial.jpg" alt="Menu%20inicial" border="0"></a>
 <a href="https://ibb.co/ijrBbv"><img src="https://image.ibb.co/e8oDpF/Capturar3.jpg" alt="Capturar3" border="0"></a>
 <a href="https://imgbb.com/"><img src="https://image.ibb.co/joWoOa/Capturar4.jpg" alt="Capturar4" border="0"></a><br>
 <b>Link do pdf:</b>https://drive.google.com/file/d/0B1cywo6W_LptYTVOZzI3clBjZ3M/view?usp=sharing<br>
