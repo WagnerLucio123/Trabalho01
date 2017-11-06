@@ -94,7 +94,7 @@ Algumas telas do prototipo: <br>
 OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mostrando os resultados.<br>
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) 
 
-##### https://github.com/WagnerLucio123/Trabalho01/blob/master/SelecionandoDados <br>
+##### https://github.com/WagnerLucio123/Trabalho01/blob/master/DadosInseridos <br>
 
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 3) 
