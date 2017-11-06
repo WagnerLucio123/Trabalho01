@@ -17,7 +17,7 @@ Algumas telas do prototipo: <br>
 <a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/Menu%20inicial.jpg"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/Menu%20inicial.jpg" alt="Menu%20inicial" border="0"></a>
 <a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/Tela%20de%20cadastro.jpg"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/Tela%20de%20cadastro.jpg" alt="Tela%20de%20cadastro" border="0"></a>
 <a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/Tela%20de%20login.jpg"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/Tela%20de%20login.jpg" alt="Tela%20de%20login" border="0"></a><br>
-<b>Link do pdf:</b>https://drive.google.com/file/d/0B1cywo6W_LptYTVOZzI3clBjZ3M/view?usp=sharing<br>
+<b>Link do pdf:</b>https://github.com/WagnerLucio123/Trabalho01/blob/master/Eventos_app.pdf<br>
 
 
 ### 5.MODELO CONCEITUAL<br>
