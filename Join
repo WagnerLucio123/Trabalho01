@@ -1,0 +1,180 @@
+create database trabalho;
+use trabalho;
+CREATE TABLE USUARIO (
+    id_Usuario Int PRIMARY KEY,
+    nome varchar(50),
+    senha varchar(70),
+    data_de_nascimento date,
+    e_mail varchar(70),
+    FK_numero_de_telefone_numero_de_telefone_PK Int,
+    FK_ENDEREÇO_id_endereço Int
+);
+
+CREATE TABLE EVENTO (
+    id_evento Int PRIMARY KEY,
+    usuario_criou int,
+    nome varchar(50),
+    tipo varchar(50),
+    preço float,
+    data_do_evento date,
+    horario time,
+    FK_USUARIO_id_Usuario Int,
+    taxa_de_criação float,
+    FK_ENDEREÇO_id_endereço Int
+);
+create table PARTICIPA(
+	id_participa INT PRIMARY KEY,
+	id_usuario int,
+    id_evento int
+);
+CREATE TABLE ENDEREÇO (
+    id_endereço Int PRIMARY KEY
+);
+
+CREATE TABLE ESTADO (
+    id_estado Int PRIMARY KEY,
+    nome_estado varchar(50),
+    FK_MUNICIPIO_id_municipio Int
+);
+
+CREATE TABLE MUNICIPIO (
+    id_municipio Int PRIMARY KEY,
+    nome_municipio varchar(50)
+);
+
+CREATE TABLE BAIRRO (
+    id_bairro Int PRIMARY KEY,
+    nome_bairro varchar(50),
+    FK_MUNICIPIO_id_municipio Int
+);
+
+CREATE TABLE LOGRADORA (
+    id_logradora Int PRIMARY KEY,
+    tipo varchar(50),
+    nome varchar(70)
+);
+
+CREATE TABLE numero_de_telefone (
+    numero_de_telefone_PK Int NOT NULL PRIMARY KEY,
+    numero_de_telefone Int
+);
+
+CREATE TABLE Participar (
+    FK_USUARIO_id_Usuario Int,
+    FK_EVENTO_id_evento Int
+);
+
+CREATE TABLE Endereço_Estado (
+    FK_ENDEREÇO_id_endereço Int,
+    FK_ESTADO_id_estado Int
+);
+
+CREATE TABLE Logradoura_Bairro (
+    FK_BAIRRO_id_bairro Int,
+    FK_LOGRADORA_id_logradora Int
+);
+ 
+ALTER TABLE USUARIO ADD CONSTRAINT FK_USUARIO_1
+    FOREIGN KEY (FK_numero_de_telefone_numero_de_telefone_PK)
+    REFERENCES numero_de_telefone (numero_de_telefone_PK)
+    ON DELETE NO ACTION ON UPDATE NO ACTION;
+ 
+ALTER TABLE USUARIO ADD CONSTRAINT FK_USUARIO_2
+    FOREIGN KEY (FK_ENDEREÇO_id_endereço)
+    REFERENCES ENDEREÇO (id_endereço)
+    ON DELETE RESTRICT ON UPDATE RESTRICT;
+ 
+ALTER TABLE EVENTO ADD CONSTRAINT FK_EVENTO_1
+    FOREIGN KEY (FK_USUARIO_id_Usuario)
+    REFERENCES USUARIO (id_Usuario)
+    ON DELETE CASCADE ON UPDATE CASCADE;
+ 
+ALTER TABLE EVENTO ADD CONSTRAINT FK_EVENTO_2
+    FOREIGN KEY (FK_ENDEREÇO_id_endereço)
+    REFERENCES ENDEREÇO (id_endereço)
+    ON DELETE RESTRICT ON UPDATE RESTRICT;
+ 
+ALTER TABLE ESTADO ADD CONSTRAINT FK_ESTADO_1
+    FOREIGN KEY (FK_MUNICIPIO_id_municipio)
+    REFERENCES MUNICIPIO (id_municipio)
+    ON DELETE RESTRICT ON UPDATE RESTRICT;
+ 
+ALTER TABLE BAIRRO ADD CONSTRAINT FK_BAIRRO_1
+    FOREIGN KEY (FK_MUNICIPIO_id_municipio)
+    REFERENCES MUNICIPIO (id_municipio)
+    ON DELETE RESTRICT ON UPDATE RESTRICT;
+ 
+ALTER TABLE Participar ADD CONSTRAINT FK_Participar_0
+    FOREIGN KEY (FK_USUARIO_id_Usuario)
+    REFERENCES USUARIO (id_Usuario)
+    ON DELETE SET NULL ON UPDATE CASCADE;
+ 
+ALTER TABLE Participar ADD CONSTRAINT FK_Participar_1
+    FOREIGN KEY (FK_EVENTO_id_evento)
+    REFERENCES EVENTO (id_evento)
+    ON DELETE SET NULL ON UPDATE CASCADE;
+ 
+ALTER TABLE Endereço_Estado ADD CONSTRAINT FK_Endereço_Estado_0
+    FOREIGN KEY (FK_ENDEREÇO_id_endereço)
+    REFERENCES ENDEREÇO (id_endereço)
+    ON DELETE RESTRICT ON UPDATE RESTRICT;
+ 
+ALTER TABLE Endereço_Estado ADD CONSTRAINT FK_Endereço_Estado_1
+    FOREIGN KEY (FK_ESTADO_id_estado)
+    REFERENCES ESTADO (id_estado)
+    ON DELETE RESTRICT ON UPDATE RESTRICT;
+ 
+ALTER TABLE Logradoura_Bairro ADD CONSTRAINT FK_Logradoura_Bairro_0
+    FOREIGN KEY (FK_BAIRRO_id_bairro)
+    REFERENCES BAIRRO (id_bairro)
+    ON DELETE SET NULL ON UPDATE CASCADE;
+ 
+ALTER TABLE Logradoura_Bairro ADD CONSTRAINT FK_Logradoura_Bairro_1
+    FOREIGN KEY (FK_LOGRADORA_id_logradora)
+    REFERENCES LOGRADORA (id_logradora)
+    ON DELETE SET NULL ON UPDATE CASCADE;
+    
+insert into usuario (id_usuario,nome,senha,data_de_nascimento,e_mail) values(1,'João',null,'1999/11/24','João@gmail.com'),(2,'Maria',null,'2000/09/03','Maria12@gmail.com'),(3,'Beijamim',null,'2001/07/05','Beijamim@gmail.com'),(4,'Ana',null,'2001/03/04','anaelizabethsantos1@gmail.com'),(5,'Kevim',null,'2000/11/13','kevim@gmail.com'),(6,'Diana',null,'2002/02/12','Diana1234@gmail.com'),(7,'Meredith',null,'2002/02/02','Meredithgreys@gmail.com'),(8,'Matheus',null,'1988/08/08','Matheuslevi2@gmail.com'),(9,'Jonas',null,'1999/04/09','Jonas@gmail.com'),(10,'Pedro',null,'2003/07/03','Pedro@gmail.com');  
+insert into evento(id_evento,nome,tipo,preço,data_do_evento,horario,taxa_de_criação,usuario_criou) values(1,'DomQuixote','Teatro',5.00,'2018/10/26',19,20.00,1),(2,'A_minha_mãe_é_uma_peça','Teatro',null,'2018/08/23',17,20.00,1),(3,NULL,NULL,NULL,NULL,NULL,NULL,null),(4,'RockInRio','Musica',10.00,'2018/03/22',16,20.00,2),(5,'Comicom','Games',12.00,'2019/06/24',14,20.00,3),(6,'CantadasEnfadonhas','Comedia',5.00,'2019/03/25',15,20.00,4),(7,'DueloDePiadas','Comedia',4,'2020/01/22',17,20.00,5),(8,'DueloDeComida','Comida',10,'2019/05/20',15,20.00,9),(9,'Food Trunk','Comida',null,'2020/04/21',19,20.00,10);
+insert into participa (id_participa,id_usuario ,id_evento) values(1,2,3),(2,4,3),(3,1,1),(4,9,5),(5,5,7),(6,5,8),(7,3,5),(8,6,2),(9,7,8),(10,8,6),(11,10,5);
+insert into estado(id_estado,nome_estado) values(1,'ES');
+insert into municipio(id_municipio,nome_municipio) values(1,'Serra'),(2,'Vitoria');
+insert into bairro(id_bairro,nome_bairro) values(1,'SãoFrancisco'),(2,'DasLaranjeiras'),(3,'Manguinhos'),(4,'Goiabeiras');
+insert into logradora (id_logradora, tipo, nome) values(1,'avenida','Petrópolis'),(2,'avenida','FernandoFerrari'),(3,'avenida','NorteSul'),(4,null,null),(5,'rua','SantaCecilia'),(6,'rua','ManoelJoséLíriodeSales'),(7,'rua','SãoLucas'),(8,'rua','SãoPedro');
+insert into numero_de_telefone(numero_de_telefone_PK,numero_de_telefone) values(1,997603834),(2,998453438),(3,995479032),(4,997245002),(5,965873015),(6,981535140),(7,985467312),(8,970645123),(9,967004352),(10,972536214);
+
+select nome from usuario where data_de_nascimento>= '1999/11/24' and id_Usuario<=5;
+select nome,data_de_nascimento from usuario where id_Usuario>=5 and id_Usuario<=7; 
+select nome from usuario where data_de_nascimento>= '1999/11/24' and data_de_nascimento<='2001/03/04';
+select nome,id_usuario from usuario where id_Usuario<> 5 and id_Usuario>= 4; 
+select nome,id_usuario from usuario where id_usuario%2=0 and id_Usuario <10;
+
+select nome from evento where preço <10 or preço=10;
+select nome from evento where nome = 'DueloDePiadas' or tipo = 'comedia';
+select nome from evento where id_evento=1 or id_evento%2=0;
+select nome from evento where id_evento%2=0 or id_evento%2=1; 
+select id_evento from evento where horario<16 or preço<=5;
+
+select nome from logradora where nome is not null ;
+select nome from evento where nome is not null;
+select nome from usuario where nome is not null;
+
+select nome from usuario where nome is not null and id_Usuario<=3 or id_Usuario%2=0;
+select nome from evento where nome is not null and preço<10 or horario<16;
+select nome from logradora where tipo = 'rua' and nome like 's%';
+
+select numero_de_telefone from numero_de_telefone where numero_de_telefone_PK = 3%2;
+select numero_de_telefone from numero_de_telefone where numero_de_telefone_PK = 9-6;
+select numero_de_telefone from numero_de_telefone where numero_de_telefone_PK = 10/2;
+select numero_de_telefone from numero_de_telefone where numero_de_telefone_PK = 2*5;
+select numero_de_telefone from numero_de_telefone where numero_de_telefone_PK = 4+2;
+
+select numero_de_telefone from numero_de_telefone where numero_de_telefone_PK = ((((3%2)+1)*2*5/4)-2);
+select numero_de_telefone from numero_de_telefone where numero_de_telefone_PK = (((4%2)+10)/((2*2*2)+2))+(3%2);
+
+select nome from logradora where tipo = 'rua' and nome like '%s%';
+select nome from logradora where tipo = 'rua' and nome like '%s';
+select nome from logradora where tipo = 'rua' and nome like 'm%';
+
+select evento.nome from evento inner join participa on (participa.id_evento = evento.id_evento) group by nome;
+select usuario.nome as usuario , evento.nome as 'evento que participa' from usuario inner join participa on (participa.id_usuario = usuario.id_usuario) inner join evento on (participa.id_evento = evento.id_evento);
