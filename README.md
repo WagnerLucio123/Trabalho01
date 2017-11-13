@@ -114,6 +114,9 @@ OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mos
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)
 ##### <br>
 #### 9.6	CONSULTAS COM JUNÇÃO (Todas Junções)<br>
+
+#### https://github.com/WagnerLucio123/Trabalho01/blob/master/Join <br>
+
 #### 9.7	CONSULTAS COM GROUP BY (Mínimo 5)<br>
         Entrega até este ponto em (data a ser definida)
         
