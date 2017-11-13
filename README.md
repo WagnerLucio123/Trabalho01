@@ -70,7 +70,7 @@ Algumas telas do prototipo: <br>
     AVENIDA: Armazena informações sobre, em qual avenida se localiza.
     
 ### 6	MODELO LÓGICO<br>
-<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/Logico_img.JPG" alt="Logico_img" border="0"></a><br>
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/Logico_img.JPG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/Logico_img.JPG" alt="Logico_img" border="0"></a><br>
 <b>Link do arquivo:</b>https://github.com/WagnerLucio123/Trabalho01/blob/master/L%C3%B3gico_1.brM3<br>
 
 ### 7	MODELO FÍSICO<br>
