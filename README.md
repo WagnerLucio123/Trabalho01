@@ -74,7 +74,8 @@ Algumas telas do prototipo: <br>
 <b>Link do arquivo:</b>https://github.com/WagnerLucio123/Trabalho01/blob/master/L%C3%B3gico_1.brM3<br>
 
 ### 7	MODELO FÍSICO<br>
-<b>Link do arquivo:</b>https://drive.google.com/file/d/0B1cywo6W_LpteGdMZFZQd2ZrQVU/view?usp=sharing<br>
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/Fisico_img.JPG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/Fisico_img.JPG" alt="Fisico_img" border="0"></a><br>
+<b>Link do arquivo:</b>https://github.com/WagnerLucio123/Trabalho01/blob/master/Fisico.sql<br>
 
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES: https://github.com/WagnerLucio123/Trabalho01/blob/master/DadosInseridos
