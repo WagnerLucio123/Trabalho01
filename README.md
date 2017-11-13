@@ -118,7 +118,8 @@ OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mos
 #### https://github.com/WagnerLucio123/Trabalho01/blob/master/Join <br>
 
 #### 9.7	CONSULTAS COM GROUP BY (Mínimo 5)<br>
-        Entrega até este ponto em (data a ser definida)
+
+#### https://github.com/WagnerLucio123/Trabalho01/blob/master/Group<br>
         
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4) <br>
 #### 9.9	CONSULTAS COM SELF JOIN (todas) E VIEW (mais importantes) <br>
