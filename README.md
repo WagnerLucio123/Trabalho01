@@ -112,7 +112,6 @@ OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mos
 ##### https://github.com/WagnerLucio123/Trabalho01/blob/master/OperadorLike <br>
 
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)
-##### <br>
 #### 9.6	CONSULTAS COM JUNÇÃO (Todas Junções)<br>
 
 #### https://github.com/WagnerLucio123/Trabalho01/blob/master/Join <br>
@@ -123,6 +122,9 @@ OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mos
         
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4) <br>
 #### 9.9	CONSULTAS COM SELF JOIN (todas) E VIEW (mais importantes) <br>
+
+#### https://github.com/WagnerLucio123/Trabalho01/blob/master/View
+
 #### 9.10	SUBCONSULTAS (Mínimo 3) <br>
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES<br>
 ### 11	DIFICULDADES ENCONTRADAS PELO GRUPO<br>
