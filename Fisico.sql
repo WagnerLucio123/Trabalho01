@@ -1,55 +1,56 @@
 CREATE TABLE USUARIO (
     id_Usuario Int PRIMARY KEY,
-    nome varchar(50),
-    senha varchar(70),
+    nome vachar(50),
+    senha vachar(70),
     data_de_nascimento date,
-    e_mail varchar(70),
-    FK_numero_de_telefone_numero_de_telefone_PK Int,
-    FK_ENDEREÇO_id_endereço Int
+    e_mail vachar(70),
+    FK_ENDERECO_id_endereco Int
 );
 
 CREATE TABLE EVENTO (
     id_evento Int PRIMARY KEY,
-    nome varchar(50),
-    tipo varchar(50),
-    preço float,
+    nome vachar(50),
+    tipo vachar(50),
+    preco float,
     data_do_evento date,
     horario time,
     FK_USUARIO_id_Usuario Int,
-    taxa_de_criação float,
-    FK_ENDEREÇO_id_endereço Int
+    taxa_de_criacao float,
+    FK_ENDERECO_id_endereco Int
 );
 
-CREATE TABLE ENDEREÇO (
-    id_endereço Int PRIMARY KEY
+CREATE TABLE ENDERECO (
+    id_endereco Int PRIMARY KEY,
+    logradora varchar,
+    cep Int,
+    complemento varchar,
+    FK_BAIRRO_id_bairro Int
 );
 
 CREATE TABLE ESTADO (
     id_estado Int PRIMARY KEY,
-    nome_estado varchar(50),
-    FK_MUNICIPIO_id_municipio Int
+    nome_estado vachar(50)
 );
 
 CREATE TABLE MUNICIPIO (
     id_municipio Int PRIMARY KEY,
-    nome_municipio varchar(50)
+    nome_municipio vachar(50),
+    FK_ESTADO_id_estado Int
 );
 
 CREATE TABLE BAIRRO (
     id_bairro Int PRIMARY KEY,
-    nome_bairro varchar(50),
+    nome_bairro vachar(50),
+    numero_endereco Int,
     FK_MUNICIPIO_id_municipio Int
 );
 
-CREATE TABLE LOGRADORA (
-    id_logradora Int PRIMARY KEY,
-    tipo varchar(50),
-    nome varchar(70)
-);
-
-CREATE TABLE numero_de_telefone (
-    numero_de_telefone_PK Int NOT NULL PRIMARY KEY,
-    numero_de_telefone Int
+CREATE TABLE CONTATO (
+    id_contato Int,
+    tipo vachar(50),
+    descricao vachar(50),
+    id_usuario Int,
+    PRIMARY KEY (id_contato, id_usuario)
 );
 
 CREATE TABLE Participar (
@@ -57,72 +58,48 @@ CREATE TABLE Participar (
     FK_EVENTO_id_evento Int
 );
 
-CREATE TABLE Endereço_Estado (
-    FK_ENDEREÇO_id_endereço Int,
-    FK_ESTADO_id_estado Int
-);
-
-CREATE TABLE Logradoura_Bairro (
-    FK_BAIRRO_id_bairro Int,
-    FK_LOGRADORA_id_logradora Int
+CREATE TABLE Usuario_conato (
+    FK_CONTATO_id_contato Int,
+    FK_CONTATO_id_usuario Int,
+    FK_USUARIO_id_Usuario Int
 );
  
 ALTER TABLE USUARIO ADD CONSTRAINT FK_USUARIO_1
-    FOREIGN KEY (FK_numero_de_telefone_numero_de_telefone_PK)
-    REFERENCES numero_de_telefone (numero_de_telefone_PK)
-    ON DELETE NO ACTION ON UPDATE NO ACTION;
- 
-ALTER TABLE USUARIO ADD CONSTRAINT FK_USUARIO_2
-    FOREIGN KEY (FK_ENDEREÇO_id_endereço)
-    REFERENCES ENDEREÇO (id_endereço)
-    ON DELETE RESTRICT ON UPDATE RESTRICT;
+    FOREIGN KEY (FK_ENDERECO_id_endereco)
+    REFERENCES ENDERECO (id_endereco);
  
 ALTER TABLE EVENTO ADD CONSTRAINT FK_EVENTO_1
     FOREIGN KEY (FK_USUARIO_id_Usuario)
-    REFERENCES USUARIO (id_Usuario)
-    ON DELETE CASCADE ON UPDATE CASCADE;
+    REFERENCES USUARIO (id_Usuario);
  
 ALTER TABLE EVENTO ADD CONSTRAINT FK_EVENTO_2
-    FOREIGN KEY (FK_ENDEREÇO_id_endereço)
-    REFERENCES ENDEREÇO (id_endereço)
-    ON DELETE RESTRICT ON UPDATE RESTRICT;
+    FOREIGN KEY (FK_ENDERECO_id_endereco)
+    REFERENCES ENDERECO (id_endereco);
  
-ALTER TABLE ESTADO ADD CONSTRAINT FK_ESTADO_1
-    FOREIGN KEY (FK_MUNICIPIO_id_municipio)
-    REFERENCES MUNICIPIO (id_municipio)
-    ON DELETE RESTRICT ON UPDATE RESTRICT;
+ALTER TABLE ENDERECO ADD CONSTRAINT FK_ENDERECO_1
+    FOREIGN KEY (FK_BAIRRO_id_bairro)
+    REFERENCES BAIRRO (id_bairro);
+ 
+ALTER TABLE MUNICIPIO ADD CONSTRAINT FK_MUNICIPIO_1
+    FOREIGN KEY (FK_ESTADO_id_estado)
+    REFERENCES ESTADO (id_estado);
  
 ALTER TABLE BAIRRO ADD CONSTRAINT FK_BAIRRO_1
     FOREIGN KEY (FK_MUNICIPIO_id_municipio)
-    REFERENCES MUNICIPIO (id_municipio)
-    ON DELETE RESTRICT ON UPDATE RESTRICT;
+    REFERENCES MUNICIPIO (id_municipio);
  
 ALTER TABLE Participar ADD CONSTRAINT FK_Participar_0
     FOREIGN KEY (FK_USUARIO_id_Usuario)
-    REFERENCES USUARIO (id_Usuario)
-    ON DELETE SET NULL ON UPDATE CASCADE;
+    REFERENCES USUARIO (id_Usuario);
  
 ALTER TABLE Participar ADD CONSTRAINT FK_Participar_1
     FOREIGN KEY (FK_EVENTO_id_evento)
-    REFERENCES EVENTO (id_evento)
-    ON DELETE SET NULL ON UPDATE CASCADE;
+    REFERENCES EVENTO (id_evento);
  
-ALTER TABLE Endereço_Estado ADD CONSTRAINT FK_Endereço_Estado_0
-    FOREIGN KEY (FK_ENDEREÇO_id_endereço)
-    REFERENCES ENDEREÇO (id_endereço)
-    ON DELETE RESTRICT ON UPDATE RESTRICT;
+ALTER TABLE Usuario_conato ADD CONSTRAINT FK_Usuario_conato_0
+    FOREIGN KEY (FK_CONTATO_id_contato, FK_CONTATO_id_usuario)
+    REFERENCES CONTATO (id_contato, id_usuario);
  
-ALTER TABLE Endereço_Estado ADD CONSTRAINT FK_Endereço_Estado_1
-    FOREIGN KEY (FK_ESTADO_id_estado)
-    REFERENCES ESTADO (id_estado)
-    ON DELETE RESTRICT ON UPDATE RESTRICT;
- 
-ALTER TABLE Logradoura_Bairro ADD CONSTRAINT FK_Logradoura_Bairro_0
-    FOREIGN KEY (FK_BAIRRO_id_bairro)
-    REFERENCES BAIRRO (id_bairro)
-    ON DELETE SET NULL ON UPDATE CASCADE;
- 
-ALTER TABLE Logradoura_Bairro ADD CONSTRAINT FK_Logradoura_Bairro_1
-    FOREIGN KEY (FK_LOGRADORA_id_logradora)
-    REFERENCES LOGRADORA (id_logradora)
-    ON DELETE SET NULL ON UPDATE CASCADE;
+ALTER TABLE Usuario_conato ADD CONSTRAINT FK_Usuario_conato_1
+    FOREIGN KEY (FK_USUARIO_id_Usuario)
+    REFERENCES USUARIO (id_Usuario);
