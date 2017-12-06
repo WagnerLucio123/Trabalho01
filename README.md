@@ -129,6 +129,6 @@ OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mos
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES<br>
 ### 11	DIFICULDADES ENCONTRADAS PELO GRUPO<br>
 
-#### https://github.com/WagnerLucio123/Trabalho01/blob/master/Trabalho%20de%20Banco%20de%20dados.odp <br>
+####  <br>
         
 ### 12  FORMATACAO NO GIT: https://help.github.com/articles/basic-writing-and-formatting-syntax/
