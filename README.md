@@ -22,7 +22,7 @@ Algumas telas do prototipo: <br>
 
 ### 5.MODELO CONCEITUAL<br>
 <a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/Conceitual_img.JPG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/Conceitual_img.JPG" alt="Conceitual_img" border="0"></a><br>
-<b>Link do arquivo:</b>https://github.com/WagnerLucio123/Trabalho01/blob/master/Conceitual1.brM3<br>
+<b>Link do arquivo:</b>https://github.com/WagnerLucio123/Trabalho01/blob/master/Conceitual1_update.brM3<br>
     
     Caso 1 - Tela de login
     RF001: Cadastra-se
@@ -71,7 +71,7 @@ Algumas telas do prototipo: <br>
     
 ### 6	MODELO LÓGICO<br>
 <a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/Logico_img.JPG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/Logico_img.JPG" alt="Logico_img" border="0"></a><br>
-<b>Link do arquivo:</b>https://github.com/WagnerLucio123/Trabalho01/blob/master/L%C3%B3gico_1.brM3<br>
+<b>Link do arquivo:</b>https://github.com/WagnerLucio123/Trabalho01/blob/master/L%C3%B3gico_1_update.brM3<br>
 
 ### 7	MODELO FÍSICO<br>
 <a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/Fisico_img.JPG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/Fisico_img.JPG" alt="Fisico_img" border="0"></a><br>
