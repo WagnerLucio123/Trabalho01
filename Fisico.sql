@@ -1,16 +1,16 @@
 CREATE TABLE USUARIO (
     id_Usuario Int PRIMARY KEY,
-    nome vachar(50),
-    senha vachar(70),
+    nome varchar(50),
+    senha varchar(70),
     data_de_nascimento date,
-    e_mail vachar(70),
+    e_mail varchar(70),
     FK_ENDERECO_id_endereco Int
 );
 
 CREATE TABLE EVENTO (
     id_evento Int PRIMARY KEY,
-    nome vachar(50),
-    tipo vachar(50),
+    nome varchar(50),
+    tipo varchar(50),
     preco float,
     data_do_evento date,
     horario time,
@@ -21,34 +21,34 @@ CREATE TABLE EVENTO (
 
 CREATE TABLE ENDERECO (
     id_endereco Int PRIMARY KEY,
-    logradora varchar,
+    logradora varchar (50),
     cep Int,
-    complemento varchar,
+    complemento varchar (50),
     FK_BAIRRO_id_bairro Int
 );
 
 CREATE TABLE ESTADO (
     id_estado Int PRIMARY KEY,
-    nome_estado vachar(50)
+    nome_estado varchar(50)
 );
 
 CREATE TABLE MUNICIPIO (
     id_municipio Int PRIMARY KEY,
-    nome_municipio vachar(50),
+    nome_municipio varchar(50),
     FK_ESTADO_id_estado Int
 );
 
 CREATE TABLE BAIRRO (
     id_bairro Int PRIMARY KEY,
-    nome_bairro vachar(50),
+    nome_bairro varchar(50),
     numero_endereco Int,
     FK_MUNICIPIO_id_municipio Int
 );
 
 CREATE TABLE CONTATO (
     id_contato Int,
-    tipo vachar(50),
-    descricao vachar(50),
+    tipo varchar(50),
+    descricao varchar(50),
     id_usuario Int,
     PRIMARY KEY (id_contato, id_usuario)
 );
