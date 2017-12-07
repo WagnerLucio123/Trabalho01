@@ -175,9 +175,10 @@ OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mos
 #### 9.7	CONSULTAS COM GROUP BY (Mínimo 5)<br>
 
 #### select usuario.nome, count(numero) as 'Numero de telefones' from contato inner join usuario on (usuario.id_Usuario = contato.id_usuario) group by usuario.nome;<br>
-
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Numero%20de%20telefones.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Numero%20de%20telefones.PNG" alt="Numero%20de%20telefones" border="0"></a><br>
 
 #### select usuario.nome, count(evento.nome) as 'Numero de eventos que participa' from evento inner join participar on (participar.FK_EVENTO_id_evento = evento.id_evento) inner join usuario on (usuario.id_Usuario = participar.FK_USUARIO_id_Usuario) group by usuario.nome;<br>
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Numero%20de%20eventos.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Numero%20de%20eventos.PNG" alt="Numero%20de%20eventos" border="0"></a><br>
 
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4) <br>
 #### coloquei no select acima na 9.6 
