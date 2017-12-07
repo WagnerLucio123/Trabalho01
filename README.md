@@ -101,6 +101,28 @@ OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mos
 #### select*from evento;
 <a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Evento.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Evento.PNG" alt="Evento" border="0"></a><br>
 
+#### select*from endereco;
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Endere%C3%A7o.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Endere%C3%A7o.PNG" alt="Endere%C3%A7o" border="0"></a><br>
+
+#### select*from bairro;
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Bairro.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Bairro.PNG" alt="Bairro" border="0"></a><br>
+
+#### select*from contato;
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Contato.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Contato.PNG" alt="Contato" border="0"></a><br>
+
+#### select*from logradora;
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Logradora.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Logradora.PNG" alt="Logradora" border="0"></a><br>
+
+#### select*from estado;
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Estado.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Estado.PNG" alt="Estado" border="0"></a><br>
+
+#### select*from municipio;
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Municipio.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Municipio.PNG" alt="Municipio" border="0"></a><br>
+
+#### select*from participar;
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Participar.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Participar.PNG" alt="Participar" border="0"></a><br>
+
+
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 3) 
 
 ##### https://github.com/WagnerLucio123/Trabalho01/blob/master/SelecionandoDados <br>
