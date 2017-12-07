@@ -175,11 +175,23 @@ OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mos
 #### 9.7	CONSULTAS COM GROUP BY (Mínimo 5)<br>
 
 #### select usuario.nome, count(numero) as 'Numero de telefones' from contato inner join usuario on (usuario.id_Usuario = contato.id_usuario) group by usuario.nome;<br>
-        
-#### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4) <br>
-#### 9.9	CONSULTAS COM SELF JOIN (todas) E VIEW (mais importantes) <br>
 
-#### https://github.com/WagnerLucio123/Trabalho01/blob/master/View
+
+#### select usuario.nome, count(evento.nome) as 'Numero de eventos que participa' from evento inner join participar on (participar.FK_EVENTO_id_evento = evento.id_evento) inner join usuario on (usuario.id_Usuario = participar.FK_USUARIO_id_Usuario) group by usuario.nome;<br>
+
+#### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4) <br>
+#### coloquei no select acima na 9.6 
+
+#### 9.9	CONSULTAS COM SELF JOIN (todas) E VIEW (mais importantes) <br>
+#### create view  endereco_dos_eventos as select evento.nome, evento.preco, evento.tipo, evento.horario, evento.data_do_evento, evento.taxa_de_criacao, usuario.nome as 'usuario que criou',  logradora.nome as 'nome da logradora', logradora.tipo, endereco.complemento, endereco.cep, bairro.nome_bairro, municipio.nome_municipio, estado.nome_estado from evento inner join usuario on (usuario.id_Usuario = evento.FK_USUARIO_id_Usuario) right outer join endereco on (usuario.FK_ENDERECO_id_endereco = endereco.id_endereco) left outer join logradora on (logradora.id_logradora = endereco.logradora) left outer join bairro on (bairro.id_bairro = endereco.FK_BAIRRO_id_bairro) left outer join municipio on (municipio.id_municipio = bairro.FK_MUNICIPIO_id_municipio) left outer join estado on (estado.id_estado = municipio.id_municipio) or (estado.id_estado <> municipio.id_municipio) order by preco; select*from endereco_dos_eventos; <br>
+
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Endere%C3%A7o%20dos%20eventos%20em%20ordem%20de%20preco%20e%20os%20usuarios%20que%20criaram%20os%20eventos..PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Endere%C3%A7o%20dos%20eventos%20em%20ordem%20de%20preco%20e%20os%20usuarios%20que%20criaram%20os%20eventos..PNG" alt="Endere%C3%A7o%20dos%20eventos%20em%20ordem%20de%20preco%20e%20os%20usuarios%20que%20criaram%20os%20eventos." border="0"></a><br>
+
+##### continuação do resultado da view acima:
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Endere%C3%A7o%20dos%20eventos%20em%20ordem%20de%20preco%20e%20os%20usuarios%20que%20criaram%20os%20eventos2.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Endere%C3%A7o%20dos%20eventos%20em%20ordem%20de%20preco%20e%20os%20usuarios%20que%20criaram%20os%20eventos2.PNG" alt="Endere%C3%A7o%20dos%20eventos%20em%20ordem%20de%20preco%20e%20os%20usuarios%20que%20criaram%20os%20eventos2" border="0"></a><br>
+
+#### create view endereco_do_usuario as select usuario.nome as 'nome do usuario', logradora.nome as 'nome da logradora', logradora.tipo, endereco.complemento, endereco.cep, bairro.nome_bairro, municipio.nome_municipio, estado.nome_estado  from endereco left outer join usuario on (usuario.FK_ENDERECO_id_endereco = endereco.id_endereco) left outer join logradora on (logradora.id_logradora = endereco.logradora) left outer join bairro on (bairro.id_bairro = endereco.FK_BAIRRO_id_bairro) left outer join municipio on (municipio.id_municipio = bairro.FK_MUNICIPIO_id_municipio) left outer join estado on (estado.id_estado = municipio.id_municipio) or (estado.id_estado <> municipio.id_municipio); select*from endereco_do_usuario; <br>
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Endere%C3%A7o%20dos%20usuarios.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Endere%C3%A7o%20dos%20usuarios.PNG" alt="Endere%C3%A7o%20dos%20usuarios" border="0"></a><br>
 
 #### 9.10	SUBCONSULTAS (Mínimo 3) <br>
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES<br>
