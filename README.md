@@ -125,12 +125,22 @@ OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mos
 
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 3) 
 
-##### https://github.com/WagnerLucio123/Trabalho01/blob/master/SelecionandoDados <br>
+##### select nome from usuario where data_de_nascimento>= '1999/11/24' and id_Usuario<=5; <br>
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Where1.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Where1.PNG" alt="Where1" border="0"></a><br>
 
+##### select nome,data_de_nascimento from usuario where id_Usuario>=5 and id_Usuario<=7; <br>
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/where2.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/where2.PNG" alt="where2" border="0"></a><br>
+
+##### select nome from usuario where data_de_nascimento>= '1999/11/24' and data_de_nascimento<='2001/03/04'; <br>
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Where3.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Where3.PNG" alt="Where3" border="0"></a><br>
 
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS (Mínimo 2) 
 
-##### https://github.com/WagnerLucio123/Trabalho01/blob/master/SelectOperadores<br>
+##### select numero from contato where id_contato = 3%2; <br>
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Operador.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Operador.PNG" alt="Operador" border="0"></a><br>
+
+##### select numero from contato where id_contato = 9-6; <br>
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Operador2.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Operador2.PNG" alt="Operador2" border="0"></a><br>
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE (Mínimo 3)
 
