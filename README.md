@@ -144,16 +144,37 @@ OBS: Incluir para cada tópico as instruções SQL + imagens (print da tela) mos
 
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE (Mínimo 3)
 
-##### https://github.com/WagnerLucio123/Trabalho01/blob/master/OperadorLike <br>
+##### select nome from usuario  where nome like '%s%'; <br>
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/OperadorLike1.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/OperadorLike1.PNG" alt="OperadorLike1" border="0"></a><br>
+
+#### select nome from usuario  where nome like 'm%'; <br>
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/OperadorLike2.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/OperadorLike2.PNG" alt="OperadorLike2" border="0"></a><br>
+
+#### select nome from usuario  where nome like 'a__'; <br>
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/OperadorLike3.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/OperadorLike3.PNG" alt="OperadorLike3" border="0"></a><br>
+
 
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)
 #### 9.6	CONSULTAS COM JUNÇÃO (Todas Junções)<br>
 
-#### https://github.com/WagnerLucio123/Trabalho01/blob/master/Join <br>
+#### select usuario.nome, numero from contato inner join usuario on (usuario.id_Usuario = contato.id_usuario); <br>
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Telefone%20dos%20usuarios.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Telefone%20dos%20usuarios.PNG" alt="Telefone%20dos%20usuarios" border="0"></a><br>
+
+#### select usuario.nome as 'nome do usuario', logradora.nome as 'nome da logradora', logradora.tipo, endereco.complemento, endereco.cep, bairro.nome_bairro, municipio.nome_municipio, estado.nome_estado  from endereco left outer join usuario on (usuario.FK_ENDERECO_id_endereco = endereco.id_endereco) left outer join logradora on (logradora.id_logradora = endereco.logradora) left outer join bairro on (bairro.id_bairro = endereco.FK_BAIRRO_id_bairro) left outer join municipio on (municipio.id_municipio = bairro.FK_MUNICIPIO_id_municipio) left outer join estado on (estado.id_estado = municipio.id_municipio) or (estado.id_estado <> municipio.id_municipio); <br>
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Endere%C3%A7o%20dos%20usuarios.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Endere%C3%A7o%20dos%20usuarios.PNG" alt="Endere%C3%A7o%20dos%20usuarios" border="0"></a><br>
+
+#### select usuario.nome, evento.nome from evento inner join participar on (participar.FK_EVENTO_id_evento = evento.id_evento) inner join usuario on (usuario.id_Usuario = participar.FK_USUARIO_id_Usuario);<br>
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/O%20evento%20que%20o%20usuario%20participa.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/O%20evento%20que%20o%20usuario%20participa.PNG" alt="O%20evento%20que%20o%20usuario%20participa" border="0"></a><br>
+
+#### select evento.nome, evento.preco, evento.tipo, evento.horario, evento.data_do_evento, evento.taxa_de_criacao, usuario.nome as 'usuario que criou',  logradora.nome as 'nome da logradora', logradora.tipo, endereco.complemento, endereco.cep, bairro.nome_bairro, municipio.nome_municipio, estado.nome_estado from evento inner join usuario on (usuario.id_Usuario = evento.FK_USUARIO_id_Usuario) right outer join endereco on (usuario.FK_ENDERECO_id_endereco = endereco.id_endereco) left outer join logradora on (logradora.id_logradora = endereco.logradora) left outer join bairro on (bairro.id_bairro = endereco.FK_BAIRRO_id_bairro) left outer join municipio on (municipio.id_municipio = bairro.FK_MUNICIPIO_id_municipio) left outer join estado on (estado.id_estado = municipio.id_municipio) or (estado.id_estado <> municipio.id_municipio) order by preco;<br>
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Endere%C3%A7o%20dos%20eventos%20em%20ordem%20de%20preco%20e%20os%20usuarios%20que%20criaram%20os%20eventos..PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Endere%C3%A7o%20dos%20eventos%20em%20ordem%20de%20preco%20e%20os%20usuarios%20que%20criaram%20os%20eventos..PNG" alt="Endere%C3%A7o%20dos%20eventos%20em%20ordem%20de%20preco%20e%20os%20usuarios%20que%20criaram%20os%20eventos." border="0"></a><br>
+
+##### continuação do resultado do codigo acima:
+<a href="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Endere%C3%A7o%20dos%20eventos%20em%20ordem%20de%20preco%20e%20os%20usuarios%20que%20criaram%20os%20eventos2.PNG"><img src="https://github.com/WagnerLucio123/Trabalho01/blob/master/imagens%20do%20select/Endere%C3%A7o%20dos%20eventos%20em%20ordem%20de%20preco%20e%20os%20usuarios%20que%20criaram%20os%20eventos2.PNG" alt="Endere%C3%A7o%20dos%20eventos%20em%20ordem%20de%20preco%20e%20os%20usuarios%20que%20criaram%20os%20eventos2" border="0"></a><br>
 
 #### 9.7	CONSULTAS COM GROUP BY (Mínimo 5)<br>
 
-#### https://github.com/WagnerLucio123/Trabalho01/blob/master/Group<br>
+#### select usuario.nome, count(numero) as 'Numero de telefones' from contato inner join usuario on (usuario.id_Usuario = contato.id_usuario) group by usuario.nome;<br>
         
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4) <br>
 #### 9.9	CONSULTAS COM SELF JOIN (todas) E VIEW (mais importantes) <br>
